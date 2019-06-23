@@ -59,3 +59,7 @@ Display the 'result' var inside the display div
 ```            })```
  ```       })```
 ```    </script>```
+
+### Question 9: In your README to the best of your knowledge please explain what a CDN (Content Delivery Network) is?
+
+A content delivery network is a network of servers that host a particular set of files/apps across the globe.  In theory, a user desiring said files/apps can link to them remotely and put them to use.  Because many servers host the same content, the idea is that the user will always be near a server in his/her area that hosts the content, making it easier to access/link to.
