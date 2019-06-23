@@ -7,33 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 2 - FizzBuzz Weekend Challenge - Seth NeJame</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-
 </head>
 
 <body>
-    <div class="ui container">
-        <h1 class="ui green header">FizzBuzz, anyone?</h1>
+    <div class="ui container"
+        style="width: 250px !important; height: 250px !important; margin: 0 !important; text-align: center !important; 
+        position: absolute !important; top: 50% !important; left: 50% !important; -ms-transform: translate(-50%, -50%) !important; transform: translate(-50%, -50%) !important;">
+        <h1 class="ui olive header">FizzBuzz, anyone?</h1>
         <h4 class="ui header">Pick a number, any number!</h1>
-        <input type="text" id="value">
-        <input type="submit" value="Check" id="button" class="ui positive button">
-        <div id="display_answer"></div>
-    </div>
+            <div class="ui action input">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="js/fizzbuzz.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () => {
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                displayDiv.innerHTML = result;
-            })
-        })
+                <input type="text" id="value" placeholder="Number. . .">
+                <button class="ui olive icon button" type="submit" value="Check" id="button">
+                    <i class="search icon"></i>
+                </button>
+                
+            </div>
+            <div id="display_answer" class="ui huge olive header"></div>
 
-    </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+            <script src="js/fizzbuzz.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    let button = document.getElementById('button')
+                    let displayDiv = document.getElementById('display_answer')
+                    button.addEventListener('click', () => {
+                        let value = document.getElementById('value').value
+                        let fizzBuzz = new FizzBuzz
+                        let result = fizzBuzz.check(value)
+                        displayDiv.innerHTML = result;
+                    })
+                })
+
+            </script>
 </body>
 
 </html>
