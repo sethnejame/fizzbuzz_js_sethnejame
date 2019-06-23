@@ -26,3 +26,36 @@ The first test is an async await function that tells the browser to open up and 
 
 Expectations of any particular unit/feature test are the expected outcome or result of the test. If you have a function that compares two numbers and returns the larger of the two numbers, your expectation for that test would be the largest number of the two arguments.
 
+### Question 8: In your README to the best of your knowledge please write a line to line explanation of what is happening in this code
+
+```<script src="js/fizzbuzz.js"></script>```
+This line includes the fizzbuzz.js file with our fizzbuzz function.
+
+```    <script>```
+```       document.addEventListener('DOMContentLoaded', () => { ```
+These lines add an event listener to the DOM (document object model) that says 'Hey, when you've loaded, do the following: '
+
+```            let button = document.getElementById('button') ```
+Create a local var called 'button' and assign it to the button in the html page by ID.
+
+```            let displayDiv = document.getElementById('display_answer')```
+Grab the div inside the html page with the ID 'display_answer' and store it in the local displayDiv variable
+
+```            button.addEventListener('click', () =>{```
+Add an event listener to the button called 'button' that waits for a click
+
+```                let value = document.getElementById('value').value```
+Grab the input field with id 'value' and assign it to a local var called 'value'
+
+```                let fizzBuzz = new FizzBuzz```
+Instatiate the FizzBuzz function in a new var 'fizzbuzz'
+
+```                let result = fizzBuzz.check(value)```
+Store the return val of fizzbuzz in a local var called 'result'
+
+```                displayDiv.innerHTML = result;```
+Display the 'result' var inside the display div
+
+```            })```
+ ```       })```
+```    </script>```
