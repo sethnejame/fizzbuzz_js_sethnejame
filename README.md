@@ -18,3 +18,11 @@ Some numbers are divisible by both 3 and 5, like 15 for instance.  The 'if' loop
 
 A unit test is for a small component or function to confirm that the desired output is correct.  A feature test is a collection of unit tests that produce an ultimate result, to confirm that a feature (comprised of multiple interconnected functions/methods/algorithms) is working properly.
 
+### Question 6: In your README to the best of your knowledge please explain what this following code does
+
+The first test is an async await function that tells the browser to open up and visit the local host address where our fizz buzz function is located.  The second test checks to make sure the browser reloads.  The last test closes the browser window after the testing is done.
+
+### Question 7: In your README to the best of your knowledge please explain what expectations in the context of testing are
+
+Expectations of any particular unit/feature test are the expected outcome or result of the test. If you have a function that compares two numbers and returns the larger of the two numbers, your expectation for that test would be the largest number of the two arguments.
+
