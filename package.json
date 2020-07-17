@@ -20,6 +20,6 @@
     "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
   },
   "dependencies": {
-    "lodash": "^4.17.14"
+    "lodash": "^4.17.19"
   }
 }
